@@ -1,0 +1,9 @@
+target 'iOS-Objc-Demo' do
+# 自定布局
+pod 'Masonry'
+# 自定义导航栏
+pod 'WDNavigationBar'
+
+pod 'SocketRocket'
+
+end
