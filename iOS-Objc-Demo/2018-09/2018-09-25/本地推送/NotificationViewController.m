@@ -74,7 +74,7 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     // 方式二: 立即发送通知
-     [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+//    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
 
 @end

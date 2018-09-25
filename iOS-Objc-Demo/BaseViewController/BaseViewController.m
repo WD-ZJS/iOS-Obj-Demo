@@ -8,8 +8,10 @@
 
 #import "BaseViewController.h"
 #import <objc/runtime.h>
+#import "AppDelegate.h"
 
 @interface BaseViewController ()
+
 
 @end
 
@@ -26,6 +28,9 @@
     [self setupNavigationBar];
     [self setupSubviews];
     [self setupSubviewsConstraints];
+    
+    AppDelegate *app = (AppDelegate *)UIApplication.sharedApplication.delegate;
+    [app.window bringSubviewToFront:app.fpsLabel];
 }
 
 #pragma mark - SetupNavigationBar

@@ -81,31 +81,31 @@
     
     [self.numTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.wdNavigationBar.mas_bottom).mas_offset(15);
-        make.leading.trailing.mas_equalTo(self.view).inset(100);
+        make.leading.trailing.mas_equalTo(self.view).inset(45);
         make.height.mas_equalTo(45);
     }];
     
     [self.cpTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.numTextField.mas_bottom).mas_offset(15);
-        make.leading.trailing.mas_equalTo(self.view).inset(100);
+        make.leading.trailing.mas_equalTo(self.view).inset(45);
         make.height.mas_equalTo(45);
     }];
     
     [self.carrierTextFiled mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.cpTextField.mas_bottom).mas_offset(15);
-        make.leading.trailing.mas_equalTo(self.view).inset(100);
+        make.leading.trailing.mas_equalTo(self.view).inset(45);
         make.height.mas_equalTo(45);
     }];
     
     [self.themeTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.carrierTextFiled.mas_bottom).mas_offset(15);
-        make.leading.trailing.mas_equalTo(self.view).inset(100);
+        make.leading.trailing.mas_equalTo(self.view).inset(45);
         make.height.mas_equalTo(45);
     }];
     
     [self.contentTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.themeTextField.mas_bottom).mas_offset(15);
-        make.leading.trailing.mas_equalTo(self.view).inset(100);
+        make.leading.trailing.mas_equalTo(self.view).inset(45);
         make.height.mas_equalTo(45);
     }];
     

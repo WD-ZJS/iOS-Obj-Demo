@@ -25,6 +25,7 @@
 		481CC4EA214785D800B8A085 /* WDTestEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481CC4E9214785D800B8A085 /* WDTestEmptyView.m */; };
 		481CC4EC214785EA00B8A085 /* WDTestEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481CC4EB214785EA00B8A085 /* WDTestEmptyView.xib */; };
 		481CC5202147AF9600B8A085 /* JianShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 481CC51F2147AF9600B8A085 /* JianShuViewController.m */; };
+		4853B29C215A05AA00AA660F /* WDWebSoketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853B29B215A05AA00AA660F /* WDWebSoketManager.m */; };
 		488023412150C71E000CF0C0 /* WDAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023402150C71E000CF0C0 /* WDAnimationViewController.m */; };
 		488023452150C83F000CF0C0 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023442150C83F000CF0C0 /* UIViewAnimationViewController.m */; };
 		488023482150D30B000CF0C0 /* CALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023472150D30B000CF0C0 /* CALayerAnimationViewController.m */; };
@@ -117,7 +118,6 @@
 		48D8A9E92151DA1A003BFB4D /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8A9E82151DA1A003BFB4D /* HealthKitManager.m */; };
 		48D8AA1C21521452003BFB4D /* HealthStepCalculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */; };
 		48D8AA1E21521C3F003BFB4D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */; };
-		48EBB6DB215387CA00701E99 /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EBB6D9215387CA00701E99 /* SocketRocketUtility.m */; };
 		68CE0461B9B6B4D24B564D20 /* libPods-iOS-Objc-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +150,8 @@
 		481CC4EB214785EA00B8A085 /* WDTestEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDTestEmptyView.xib; sourceTree = "<group>"; };
 		481CC51E2147AF9600B8A085 /* JianShuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianShuViewController.h; sourceTree = "<group>"; };
 		481CC51F2147AF9600B8A085 /* JianShuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianShuViewController.m; sourceTree = "<group>"; };
+		4853B29A215A05AA00AA660F /* WDWebSoketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDWebSoketManager.h; sourceTree = "<group>"; };
+		4853B29B215A05AA00AA660F /* WDWebSoketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDWebSoketManager.m; sourceTree = "<group>"; };
 		488023382150BF71000CF0C0 /* iOS-Objc-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Objc-Demo.entitlements"; sourceTree = "<group>"; };
 		4880233F2150C71E000CF0C0 /* WDAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDAnimationViewController.h; sourceTree = "<group>"; };
 		488023402150C71E000CF0C0 /* WDAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDAnimationViewController.m; sourceTree = "<group>"; };
@@ -327,8 +329,6 @@
 		48D8AA1A21521452003BFB4D /* HealthStepCalculatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthStepCalculatorController.h; sourceTree = "<group>"; };
 		48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthStepCalculatorController.m; sourceTree = "<group>"; };
 		48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		48EBB6D9215387CA00701E99 /* SocketRocketUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
-		48EBB6DA215387CA00701E99 /* SocketRocketUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocketUtility.h; sourceTree = "<group>"; };
 		49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Objc-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0C519830B4F4958FBCDF68 /* Pods-iOS-Objc-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Objc-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Objc-Demo/Pods-iOS-Objc-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AA5D127743D6FFC5A3B81B /* Pods-iOS-Objc-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Objc-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Objc-Demo/Pods-iOS-Objc-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -669,8 +669,8 @@
 			children = (
 				488023382150BF71000CF0C0 /* iOS-Objc-Demo.entitlements */,
 				48B9E46D21423FDF0062C43D /* AppDelegate.h */,
-				489C894D2159E1340049E834 /* DNFPSLabel.h */,
 				48B9E46E21423FDF0062C43D /* AppDelegate.m */,
+				489C894D2159E1340049E834 /* DNFPSLabel.h */,
 				489C894E2159E1340049E834 /* DNFPSLabel.m */,
 				4853B2962159F8DE00AA660F /* 2018-09 */,
 				48B9E4DA214240050062C43D /* BaseViewController */,
@@ -1027,8 +1027,8 @@
 		48EBB6D8215387CA00701E99 /* WebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				48EBB6D9215387CA00701E99 /* SocketRocketUtility.m */,
-				48EBB6DA215387CA00701E99 /* SocketRocketUtility.h */,
+				4853B29A215A05AA00AA660F /* WDWebSoketManager.h */,
+				4853B29B215A05AA00AA660F /* WDWebSoketManager.m */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -1177,7 +1177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B35EB0214907BC00FDD508 /* WMMenuView.m in Sources */,
-				48EBB6DB215387CA00701E99 /* SocketRocketUtility.m in Sources */,
 				489C89482159E1290049E834 /* SortContactsController.m in Sources */,
 				48B9E4CE21423FFF0062C43D /* WDBottomSheetViewController.m in Sources */,
 				48B9E4EC214240060062C43D /* BaseViewController.m in Sources */,
@@ -1208,6 +1207,7 @@
 				489585B221508898004BD992 /* WDPopoverAnimator.m in Sources */,
 				481CC4EA214785D800B8A085 /* WDTestEmptyView.m in Sources */,
 				48D4F929214B7C6900F9C70F /* WDPhotoImageModel.m in Sources */,
+				4853B29C215A05AA00AA660F /* WDWebSoketManager.m in Sources */,
 				489585A521508404004BD992 /* QQMusicPageViewController.m in Sources */,
 				48B9E4CF21423FFF0062C43D /* WDActionSheet.m in Sources */,
 				48B9E4CD21423FFF0062C43D /* TemplateView.m in Sources */,

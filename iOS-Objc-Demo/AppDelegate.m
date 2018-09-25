@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
-#import "DNFPSLabel.h"
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
@@ -24,10 +23,10 @@
     [self requestAuthor];
     
     CGFloat Y = [UIApplication sharedApplication].statusBarFrame.size.height;
-    DNFPSLabel * label = [[DNFPSLabel alloc] initWithFrame:CGRectMake(75, Y, 60, 44)];
-    label.textColor = UIColor.cyanColor;
-    [[UIApplication sharedApplication].keyWindow addSubview:label];
-    
+    self.fpsLabel = [[DNFPSLabel alloc] initWithFrame:CGRectMake(75, Y, 60, 44)];
+    self.fpsLabel.textColor = UIColor.redColor;
+    [self.window addSubview:self.fpsLabel];
+        
     return YES;
 }
 

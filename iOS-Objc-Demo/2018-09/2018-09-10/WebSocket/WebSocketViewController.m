@@ -7,9 +7,12 @@
 //
 
 #import "WebSocketViewController.h"
-#import "SocketRocketUtility.h"
+#import "WDWebSoketManager.h"
 
-@interface WebSocketViewController ()
+@interface WebSocketViewController ()<WDWebSoketManagerDelegate>
+
+@property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, copy) NSString *tempText;
 
 @end
 
@@ -17,33 +20,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.tempText = @"";
     
     [self.wdNavigationBar.centerButton setTitle:@"WebSocet" forState:UIControlStateNormal];
     
-    [[SocketRocketUtility instance] SRWebSocketOpenWithURLString:@"ws://118.31.12.178:80/websocket/2"];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidOpen) name:kWebSocketDidOpenNote object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SRWebSocketDidReceiveMsg:) name:kWebSocketdidReceiveMessageNote object:nil];
+    [self.wdNavigationBar.rightButton setTitle:@"发送" forState:UIControlStateNormal];
+    self.wdNavigationBar.rightButtonBlock = ^{
+        NSInteger random = arc4random() % 999;
+        NSString *tempStr = [NSString stringWithFormat:@"往服务器发送的测试消息:%ld",random];
+        [[WDWebSoketManager manager] senderMessager:tempStr];
+    };
+    
+    [self.wdNavigationBar.rightTwoButton setTitle:@"停止" forState:UIControlStateNormal];
+    self.wdNavigationBar.rightTwoButtonBlock = ^{
+        [[WDWebSoketManager manager] closeContat];
+    };
+    
+    [[WDWebSoketManager manager] contactToSeverWithUrlAddress:@"ws://118.31.12.178:80/websocket/2"];
+    [[WDWebSoketManager manager] setDelegate:self];
+    
+    self.textView = [[UITextView alloc] init];
+    self.textView.editable = false;
+    [self.view addSubview:self.textView];
+    
+    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.wdNavigationBar.mas_bottom);
+        make.leading.trailing.bottom.mas_equalTo(self.view);
+    }];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [[SocketRocketUtility instance] sendData:@"123123"];
+- (void)getMassageFromSeverWithInfo:(NSString *)info {
+    self.tempText = [NSString stringWithFormat:@"%@%@\n",self.tempText,info];
+    self.textView.text = self.tempText;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    // 页面消失 关闭
-    [[SocketRocketUtility instance] SRWebSocketClose];
-}
-
-- (void)SRWebSocketDidOpen {
-    NSLog(@"开启成功");
-}
-
-- (void)SRWebSocketDidReceiveMsg:(NSNotification *)note {
-    //收到服务端发送过来的消息
-    NSString * message = note.object;
-    NSLog(@"服务器发过来的信息：%@",message);
+    [[WDWebSoketManager manager] closeContat];
 }
 
 @end
