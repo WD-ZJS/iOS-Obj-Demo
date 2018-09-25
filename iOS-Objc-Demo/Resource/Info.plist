@@ -31,6 +31,8 @@
 	<string>使用蓝牙</string>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
+	<key>NSContactsUsageDescription</key>
+	<string>contactsDesciption</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>some string value stating the reason</string>
 	<key>NSHealthUpdateUsageDescription</key>
@@ -72,7 +74,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSContactsUsageDescription</key>
-    <string>contactsDesciption</string>
 </dict>
 </plist>

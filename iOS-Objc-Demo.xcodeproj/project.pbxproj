@@ -119,6 +119,13 @@
 		48D8AA1C21521452003BFB4D /* HealthStepCalculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */; };
 		48D8AA1E21521C3F003BFB4D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */; };
 		68CE0461B9B6B4D24B564D20 /* libPods-iOS-Objc-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */; };
+		705F6A05215A2A3200632C73 /* DNPedometerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F69FD215A2A3200632C73 /* DNPedometerCell.m */; };
+		705F6A06215A2A3200632C73 /* DNPedometerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705F6A00215A2A3200632C73 /* DNPedometerCell.xib */; };
+		705F6A07215A2A3200632C73 /* DNPedometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F6A01215A2A3200632C73 /* DNPedometerManager.m */; };
+		705F6A08215A2A3200632C73 /* DNPedometerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F6A03215A2A3200632C73 /* DNPedometerModel.m */; };
+		705F6A09215A2A3200632C73 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F6A04215A2A3200632C73 /* UICountingLabel.m */; };
+		705F6A0D215A2AB500632C73 /* CoreMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F6A0B215A2AB500632C73 /* CoreMotionViewController.m */; };
+		705F6A0E215A2AB500632C73 /* CoreMotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705F6A0C215A2AB500632C73 /* CoreMotionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -330,6 +337,18 @@
 		48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthStepCalculatorController.m; sourceTree = "<group>"; };
 		48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Objc-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		705F69FC215A2A3200632C73 /* DNPedometerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPedometerManager.h; sourceTree = "<group>"; };
+		705F69FD215A2A3200632C73 /* DNPedometerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPedometerCell.m; sourceTree = "<group>"; };
+		705F69FE215A2A3200632C73 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		705F69FF215A2A3200632C73 /* DNPedometerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPedometerModel.h; sourceTree = "<group>"; };
+		705F6A00215A2A3200632C73 /* DNPedometerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNPedometerCell.xib; sourceTree = "<group>"; };
+		705F6A01215A2A3200632C73 /* DNPedometerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPedometerManager.m; sourceTree = "<group>"; };
+		705F6A02215A2A3200632C73 /* DNPedometerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPedometerCell.h; sourceTree = "<group>"; };
+		705F6A03215A2A3200632C73 /* DNPedometerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPedometerModel.m; sourceTree = "<group>"; };
+		705F6A04215A2A3200632C73 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		705F6A0A215A2AB500632C73 /* CoreMotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMotionViewController.h; sourceTree = "<group>"; };
+		705F6A0B215A2AB500632C73 /* CoreMotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMotionViewController.m; sourceTree = "<group>"; };
+		705F6A0C215A2AB500632C73 /* CoreMotionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreMotionViewController.xib; sourceTree = "<group>"; };
 		7B0C519830B4F4958FBCDF68 /* Pods-iOS-Objc-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Objc-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Objc-Demo/Pods-iOS-Objc-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AA5D127743D6FFC5A3B81B /* Pods-iOS-Objc-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Objc-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Objc-Demo/Pods-iOS-Objc-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -990,6 +1009,7 @@
 			children = (
 				48D8A9DF2151D2C3003BFB4D /* AppleSystemViewController.h */,
 				48D8A9E02151D2C3003BFB4D /* AppleSystemViewController.m */,
+				705F69FB215A2A3200632C73 /* CoreMotion */,
 				48D8A9EA2151E5DF003BFB4D /* HealthKit */,
 			);
 			path = "苹果系统库";
@@ -1031,6 +1051,25 @@
 				4853B29B215A05AA00AA660F /* WDWebSoketManager.m */,
 			);
 			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		705F69FB215A2A3200632C73 /* CoreMotion */ = {
+			isa = PBXGroup;
+			children = (
+				705F6A0A215A2AB500632C73 /* CoreMotionViewController.h */,
+				705F6A0B215A2AB500632C73 /* CoreMotionViewController.m */,
+				705F6A0C215A2AB500632C73 /* CoreMotionViewController.xib */,
+				705F69FC215A2A3200632C73 /* DNPedometerManager.h */,
+				705F6A01215A2A3200632C73 /* DNPedometerManager.m */,
+				705F69FE215A2A3200632C73 /* UICountingLabel.h */,
+				705F6A04215A2A3200632C73 /* UICountingLabel.m */,
+				705F6A00215A2A3200632C73 /* DNPedometerCell.xib */,
+				705F6A02215A2A3200632C73 /* DNPedometerCell.h */,
+				705F69FD215A2A3200632C73 /* DNPedometerCell.m */,
+				705F69FF215A2A3200632C73 /* DNPedometerModel.h */,
+				705F6A03215A2A3200632C73 /* DNPedometerModel.m */,
+			);
+			path = CoreMotion;
 			sourceTree = "<group>";
 		};
 		D14B03FF6003CBD422AF1BE6 /* Frameworks */ = {
@@ -1137,6 +1176,7 @@
 				489C894B2159E1290049E834 /* DNContactsCell.xib in Resources */,
 				48B9E4D321423FFF0062C43D /* arrow_down@3x.png in Resources */,
 				48B9E4EE214240060062C43D /* LaunchScreen.storyboard in Resources */,
+				705F6A06215A2A3200632C73 /* DNPedometerCell.xib in Resources */,
 				481AB3B2214F322A0078912F /* test6.jpg in Resources */,
 				481AB3B5214F322A0078912F /* test4.jpg in Resources */,
 				489585C321508B0F004BD992 /* ModalTestViewController.xib in Resources */,
@@ -1144,6 +1184,7 @@
 				48B9E4ED214240060062C43D /* Assets.xcassets in Resources */,
 				48B35EBF214909F500FDD508 /* avatar.jpg in Resources */,
 				481AB3B6214F322A0078912F /* test0.jpg in Resources */,
+				705F6A0E215A2AB500632C73 /* CoreMotionViewController.xib in Resources */,
 				481AB3B7214F322A0078912F /* test1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1193,9 +1234,11 @@
 				489C892F2159C3720049E834 /* NotificationViewController.m in Sources */,
 				489C894A2159E1290049E834 /* DNContactsModel.m in Sources */,
 				48B9E4CB21423FFF0062C43D /* TemplateOfViewController.m in Sources */,
+				705F6A07215A2A3200632C73 /* DNPedometerManager.m in Sources */,
 				48B9E4D221423FFF0062C43D /* WDDropDownViewController.m in Sources */,
 				48B9E4F2214240060062C43D /* ViewController.m in Sources */,
 				48D4F921214B7C6900F9C70F /* WDPhotoPickerManager.m in Sources */,
+				705F6A09215A2A3200632C73 /* UICountingLabel.m in Sources */,
 				48B9E4C021423FFF0062C43D /* Demo2ViewController.m in Sources */,
 				48D4F8FD214B7C3B00F9C70F /* WDPhotoPickerTestViewController.m in Sources */,
 				48B35ED321490E9200FDD508 /* SecondViewTableViewController.m in Sources */,
@@ -1212,7 +1255,9 @@
 				48B9E4CF21423FFF0062C43D /* WDActionSheet.m in Sources */,
 				48B9E4CD21423FFF0062C43D /* TemplateView.m in Sources */,
 				48B9E4C621423FFF0062C43D /* PageBaseController.m in Sources */,
+				705F6A05215A2A3200632C73 /* DNPedometerCell.m in Sources */,
 				489585BA21508A32004BD992 /* WDModalViewController.m in Sources */,
+				705F6A08215A2A3200632C73 /* DNPedometerModel.m in Sources */,
 				481AB3A3214F301C0078912F /* WDBannerViewController.m in Sources */,
 				48B9E4D821423FFF0062C43D /* DropViewTestViewController.m in Sources */,
 				48B9E4CA21423FFF0062C43D /* WDWebViewController.m in Sources */,
@@ -1246,6 +1291,7 @@
 				48B9E4C321423FFF0062C43D /* WDTabLayout.m in Sources */,
 				48B35EB1214907BC00FDD508 /* WMProgressView.m in Sources */,
 				48D4F932214B7E5B00F9C70F /* UIScrollView+Photo_PlaceHolder.m in Sources */,
+				705F6A0D215A2AB500632C73 /* CoreMotionViewController.m in Sources */,
 				489585AE21508855004BD992 /* UIViewController+WDPopover.m in Sources */,
 				489C89332159CCFA0049E834 /* DailViewController.m in Sources */,
 				48B9E4C121423FFF0062C43D /* Demo1ViewController.m in Sources */,
@@ -1408,8 +1454,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-Objc-Demo/iOS-Objc-Demo.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VBRJ4R5T9;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOS-Objc-Demo/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1417,7 +1464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "forever.wudan.iOS-Objc-Demo2";
+				PRODUCT_BUNDLE_IDENTIFIER = forever.wudan.iOSObjcDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1431,8 +1478,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-Objc-Demo/iOS-Objc-Demo.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VBRJ4R5T9;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iOS-Objc-Demo/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1440,7 +1488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "forever.wudan.iOS-Objc-Demo2";
+				PRODUCT_BUNDLE_IDENTIFIER = forever.wudan.iOSObjcDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

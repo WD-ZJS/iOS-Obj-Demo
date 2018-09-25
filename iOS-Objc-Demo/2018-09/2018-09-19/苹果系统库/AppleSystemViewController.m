@@ -47,8 +47,8 @@
 
 #pragma mark =============== Data initialization ===============
 - (void)dataInitialization {
-    self.dataArray = @[@"HealthKit----健康信息", ];
-    self.controllerArray = @[@"HealthKitViewController", ];
+    self.dataArray = @[@"HealthKit----健康信息", @"CoreMotion -- 步数"];
+    self.controllerArray = @[@"HealthKitViewController", @"CoreMotionViewController"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

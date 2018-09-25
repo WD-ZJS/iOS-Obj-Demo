@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreMotionViewController">
+            <connections>
+                <outlet property="stepLabel" destination="eDx-SQ-fKr" id="Y2s-La-q1C"/>
+                <outlet property="tableView" destination="213-ei-f3j" id="NhB-k8-prz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-xp-wgR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDx-SQ-fKr" customClass="UICountingLabel">
+                            <rect key="frame" x="133.5" y="74" width="108" height="108"/>
+                            <color key="backgroundColor" red="0.2418010022" green="1" blue="0.94021010810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="eDx-SQ-fKr" secondAttribute="height" multiplier="36:36" id="LsV-h1-McV"/>
+                                <constraint firstAttribute="width" constant="108" id="uZK-cI-901"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.44681153940000001" blue="0.18677959869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="eDx-SQ-fKr" firstAttribute="centerY" secondItem="a0Q-xp-wgR" secondAttribute="centerY" id="p6T-xf-6tS"/>
+                        <constraint firstAttribute="width" secondItem="a0Q-xp-wgR" secondAttribute="height" multiplier="375:256" id="r1Y-Fj-xnB"/>
+                        <constraint firstItem="eDx-SQ-fKr" firstAttribute="centerX" secondItem="a0Q-xp-wgR" secondAttribute="centerX" id="y1f-o6-nqS"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="213-ei-f3j">
+                    <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="a0Q-xp-wgR" secondAttribute="trailing" id="D8O-KV-QHo"/>
+                <constraint firstItem="213-ei-f3j" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Nsm-Rh-VGq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="213-ei-f3j" secondAttribute="trailing" id="Qad-RD-hjS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="213-ei-f3j" secondAttribute="bottom" id="X99-ja-6V5"/>
+                <constraint firstItem="a0Q-xp-wgR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Zx4-9j-SRD"/>
+                <constraint firstItem="a0Q-xp-wgR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="afx-ng-o1Q"/>
+                <constraint firstItem="213-ei-f3j" firstAttribute="top" secondItem="a0Q-xp-wgR" secondAttribute="bottom" id="bv7-Mj-hy9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

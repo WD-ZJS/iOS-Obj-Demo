@@ -69,6 +69,7 @@
             navView;
         });
     }
+    
     return _wdNavigationBar;
 }
 @end

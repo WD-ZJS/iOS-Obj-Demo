@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
 
-#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375 && [UIScreen mainScreen].bounds.size.height == 812)
+//#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375 && [UIScreen mainScreen].bounds.size.height == 812)
+#define IS_iPhoneX (([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) && ([[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom > 0.0))
 #define KStatusBarHeight (IS_iPhoneX ? 24.f:0.f)
 #define KStatusBarMargin (IS_iPhoneX ? 22.f:0.f)
 #define Screen_Height      [[UIScreen mainScreen] bounds].size.height
