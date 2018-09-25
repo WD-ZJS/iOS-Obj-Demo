@@ -160,7 +160,7 @@
             self.bottomView.sureButton.backgroundColor = UIColor.lightGrayColor;
             self.bottomView.sureButton.userInteractionEnabled = false;
         } else {
-            [self.bottomView.sureButton setTitle:[NSString stringWithFormat:@"确定(%ld)",self.selectedArray.count] forState:UIControlStateNormal];
+            [self.bottomView.sureButton setTitle:[NSString stringWithFormat:@"确定(%lu)",(unsigned long)self.selectedArray.count] forState:UIControlStateNormal];
             self.bottomView.sureButton.backgroundColor = self.sureBackgrondColor;
             self.bottomView.sureButton.userInteractionEnabled = true;
         }

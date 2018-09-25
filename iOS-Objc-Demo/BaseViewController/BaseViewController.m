@@ -62,7 +62,7 @@
             navView.tintColor = kMainBlack;
             [navView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.top.mas_equalTo(0);
-                make.height.mas_equalTo(64 + KStatusBarHeight);
+                make.height.mas_equalTo(44 + UIApplication.sharedApplication.statusBarFrame.size.height);
             }];
             [navView.centerButton setTitleColor:kMainBlack forState:UIControlStateNormal];
             [navView.superview layoutIfNeeded];
