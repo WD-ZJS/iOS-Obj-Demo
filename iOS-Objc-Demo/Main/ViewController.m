@@ -8,45 +8,13 @@
 
 #import "ViewController.h"
 
-// 2018-09-05
-#import "Demo1ViewController.h"
-#import "Demo2ViewController.h"
-#import "Demo3ViewController.h"
-// 2018-09-06
-#import "WDWebViewController.h"
-// 2018-09-07
-#import "WDBottomSheetViewController.h"
-#import "WDDropDownViewController.h"
-#import "WDSlideCategoryViewController.h"
-// 2018-09-10
-#import "WebSocketViewController.h"
-// 2018-09-11
-#import "WaterfallFlowViewController.h"
-#import "WDEmptyNoDataViewController.h"
-#import "JianShuViewController.h"
-// 2018-09-14
-#import "WDPhotoPickerTestViewController.h"
-// 2018-09-17
-#import "WDBannerViewController.h"
-// 2018-09-18
-#import "QQMusicPageViewController.h"
-#import "WDModalViewController.h"
-#import "WDAnimationViewController.h"
-// 2018-09-19
-#import "AppleSystemViewController.h"
-// 2018-09-21
-// 2018-09-25
-#import "WDContactPersonViewController.h"
-#import "NotificationViewController.h"
-#import "SendMsgViewController.h"
-#import "SendEmailViewController.h"
-
 @interface ViewController ()
-
-@property (nonatomic, copy) NSArray *dataArray;
-@property (nonatomic, copy) NSArray *dateArray;
-@property (nonatomic, copy) NSArray *controllerArray;
-
+/** < 名称数组 > */
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> *dataArray;
+/** < 时间数组 > */
+@property (nonatomic, copy) NSArray<NSString *> *dateArray;
+/** < 控制器数组 > */
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> *controllerArray;
 
 @end
 
@@ -105,6 +73,7 @@
                              @[@"WDPrintViewController"],
                              @[@"WDContactPersonViewController", @"NotificationViewController", @"DailViewController", @"SendMsgViewController", @"SendEmailViewController"]
                              ];
+    
     [self.tableView reloadData];
 }
 

@@ -37,7 +37,9 @@
          center.delegate = self;
          [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
                                completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                                   NSLog(@"未获取权限");
+                                   if (error) {
+                                       NSLog(@"未获取权限");
+                                   }
                                }];
          [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
              
