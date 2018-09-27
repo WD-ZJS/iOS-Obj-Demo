@@ -56,9 +56,10 @@
                        @[@"仿QQ音乐页面", @"模态弹窗", @"动画学习"],
                        @[@"苹果系统库"],
                        @[@"打字效果"],
-                       @[@"访问联系人", @"本地推送", @"拨打电话", @"发送短信", @"发送邮件"]];
+                       @[@"访问联系人", @"本地推送", @"拨打电话", @"发送短信", @"发送邮件"],
+                       @[@"个人中心<精简版>"]];
     
-    self.dateArray = @[@"2018-09-05", @"2018-09-06", @"2018-09-07", @"2018-09-10", @"2018-09-11", @"2018-09-12", @"2018-09-14", @"2018-09-17", @"2018-09-18", @"2018-09-19", @"2018-09-21", @"2018-09-25"];
+    self.dateArray = @[@"2018-09-05", @"2018-09-06", @"2018-09-07", @"2018-09-10", @"2018-09-11", @"2018-09-12", @"2018-09-14", @"2018-09-17", @"2018-09-18", @"2018-09-19", @"2018-09-21", @"2018-09-25", @"2018-09-27"];
     
     self.controllerArray = @[@[@"Demo1ViewController", @"Demo2ViewController", @"Demo3ViewController"],
                              @[@"WDWebViewController"],
@@ -71,7 +72,8 @@
                              @[@"QQMusicPageViewController", @"WDModalViewController", @"WDAnimationViewController"],
                              @[@"AppleSystemViewController"],
                              @[@"WDPrintViewController"],
-                             @[@"WDContactPersonViewController", @"NotificationViewController", @"DailViewController", @"SendMsgViewController", @"SendEmailViewController"]
+                             @[@"WDContactPersonViewController", @"NotificationViewController", @"DailViewController", @"SendMsgViewController", @"SendEmailViewController"],
+                             @[@"WDPersonCenterViewController"],
                              ];
     
     [self.tableView reloadData];

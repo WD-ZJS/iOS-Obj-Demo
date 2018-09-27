@@ -25,6 +25,13 @@
 		481CC4EA214785D800B8A085 /* WDTestEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481CC4E9214785D800B8A085 /* WDTestEmptyView.m */; };
 		481CC4EC214785EA00B8A085 /* WDTestEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481CC4EB214785EA00B8A085 /* WDTestEmptyView.xib */; };
 		481CC5202147AF9600B8A085 /* JianShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 481CC51F2147AF9600B8A085 /* JianShuViewController.m */; };
+		4826EBDC215C9E4E006F5957 /* WDPersonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBDB215C9E4E006F5957 /* WDPersonCenterViewController.m */; };
+		4826EBE8215C9E9F006F5957 /* WDPageSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBE1215C9E9F006F5957 /* WDPageSegmentView.m */; };
+		4826EBE9215C9E9F006F5957 /* WDPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBE2215C9E9F006F5957 /* WDPageViewController.m */; };
+		4826EBEA215C9E9F006F5957 /* WDPageNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBE3215C9E9F006F5957 /* WDPageNavigationBar.m */; };
+		4826EBEB215C9E9F006F5957 /* WDPageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBE4215C9E9F006F5957 /* WDPageCategory.m */; };
+		4826EBED215C9FC8006F5957 /* 1532095125345.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4826EBEC215C9FC8006F5957 /* 1532095125345.jpg */; };
+		4826EBF0215CA377006F5957 /* WDPageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBEF215CA376006F5957 /* WDPageTestViewController.m */; };
 		4853B29C215A05AA00AA660F /* WDWebSoketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853B29B215A05AA00AA660F /* WDWebSoketManager.m */; };
 		488023412150C71E000CF0C0 /* WDAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023402150C71E000CF0C0 /* WDAnimationViewController.m */; };
 		488023452150C83F000CF0C0 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023442150C83F000CF0C0 /* UIViewAnimationViewController.m */; };
@@ -157,6 +164,19 @@
 		481CC4EB214785EA00B8A085 /* WDTestEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDTestEmptyView.xib; sourceTree = "<group>"; };
 		481CC51E2147AF9600B8A085 /* JianShuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianShuViewController.h; sourceTree = "<group>"; };
 		481CC51F2147AF9600B8A085 /* JianShuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianShuViewController.m; sourceTree = "<group>"; };
+		4826EBDA215C9E4E006F5957 /* WDPersonCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDPersonCenterViewController.h; sourceTree = "<group>"; };
+		4826EBDB215C9E4E006F5957 /* WDPersonCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDPersonCenterViewController.m; sourceTree = "<group>"; };
+		4826EBE0215C9E9F006F5957 /* WDPageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageCategory.h; sourceTree = "<group>"; };
+		4826EBE1215C9E9F006F5957 /* WDPageSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageSegmentView.m; sourceTree = "<group>"; };
+		4826EBE2215C9E9F006F5957 /* WDPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageViewController.m; sourceTree = "<group>"; };
+		4826EBE3215C9E9F006F5957 /* WDPageNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageNavigationBar.m; sourceTree = "<group>"; };
+		4826EBE4215C9E9F006F5957 /* WDPageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageCategory.m; sourceTree = "<group>"; };
+		4826EBE5215C9E9F006F5957 /* WDPageNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageNavigationBar.h; sourceTree = "<group>"; };
+		4826EBE6215C9E9F006F5957 /* WDPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageViewController.h; sourceTree = "<group>"; };
+		4826EBE7215C9E9F006F5957 /* WDPageSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageSegmentView.h; sourceTree = "<group>"; };
+		4826EBEC215C9FC8006F5957 /* 1532095125345.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1532095125345.jpg; sourceTree = "<group>"; };
+		4826EBEE215CA376006F5957 /* WDPageTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPageTestViewController.h; sourceTree = "<group>"; };
+		4826EBEF215CA376006F5957 /* WDPageTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageTestViewController.m; sourceTree = "<group>"; };
 		4853B29A215A05AA00AA660F /* WDWebSoketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDWebSoketManager.h; sourceTree = "<group>"; };
 		4853B29B215A05AA00AA660F /* WDWebSoketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDWebSoketManager.m; sourceTree = "<group>"; };
 		488023382150BF71000CF0C0 /* iOS-Objc-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Objc-Demo.entitlements"; sourceTree = "<group>"; };
@@ -453,9 +473,46 @@
 			path = "仿微博个人中心2";
 			sourceTree = "<group>";
 		};
+		4826EBDD215C9E56006F5957 /* 个人中心<精简版> */ = {
+			isa = PBXGroup;
+			children = (
+				4826EBEE215CA376006F5957 /* WDPageTestViewController.h */,
+				4826EBEF215CA376006F5957 /* WDPageTestViewController.m */,
+				4826EBEC215C9FC8006F5957 /* 1532095125345.jpg */,
+				4826EBDF215C9E9F006F5957 /* WDPageScrollView */,
+				4826EBDA215C9E4E006F5957 /* WDPersonCenterViewController.h */,
+				4826EBDB215C9E4E006F5957 /* WDPersonCenterViewController.m */,
+			);
+			path = "个人中心<精简版>";
+			sourceTree = "<group>";
+		};
+		4826EBDE215C9E7B006F5957 /* 2018-09-27 */ = {
+			isa = PBXGroup;
+			children = (
+				4826EBDD215C9E56006F5957 /* 个人中心<精简版> */,
+			);
+			path = "2018-09-27";
+			sourceTree = "<group>";
+		};
+		4826EBDF215C9E9F006F5957 /* WDPageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				4826EBE0215C9E9F006F5957 /* WDPageCategory.h */,
+				4826EBE4215C9E9F006F5957 /* WDPageCategory.m */,
+				4826EBE5215C9E9F006F5957 /* WDPageNavigationBar.h */,
+				4826EBE3215C9E9F006F5957 /* WDPageNavigationBar.m */,
+				4826EBE7215C9E9F006F5957 /* WDPageSegmentView.h */,
+				4826EBE1215C9E9F006F5957 /* WDPageSegmentView.m */,
+				4826EBE6215C9E9F006F5957 /* WDPageViewController.h */,
+				4826EBE2215C9E9F006F5957 /* WDPageViewController.m */,
+			);
+			path = WDPageScrollView;
+			sourceTree = "<group>";
+		};
 		4853B2962159F8DE00AA660F /* 2018-09 */ = {
 			isa = PBXGroup;
 			children = (
+				4826EBDE215C9E7B006F5957 /* 2018-09-27 */,
 				48B9E48321423FFE0062C43D /* 2018-09-05 */,
 				48B9E49C21423FFE0062C43D /* 2018-09-06 */,
 				48B9E4A721423FFF0062C43D /* 2018-09-07 */,
@@ -1184,6 +1241,7 @@
 				48B9E4ED214240060062C43D /* Assets.xcassets in Resources */,
 				48B35EBF214909F500FDD508 /* avatar.jpg in Resources */,
 				481AB3B6214F322A0078912F /* test0.jpg in Resources */,
+				4826EBED215C9FC8006F5957 /* 1532095125345.jpg in Resources */,
 				705F6A0E215A2AB500632C73 /* CoreMotionViewController.xib in Resources */,
 				481AB3B7214F322A0078912F /* test1.jpg in Resources */,
 			);
@@ -1224,7 +1282,9 @@
 				48D4F92B214B7C6900F9C70F /* WDPhotoImageCollectionViewCell.m in Sources */,
 				488023412150C71E000CF0C0 /* WDAnimationViewController.m in Sources */,
 				488023EA2150F13B000CF0C0 /* ModalTestNextViewController.m in Sources */,
+				4826EBF0215CA377006F5957 /* WDPageTestViewController.m in Sources */,
 				48B35ED121490E9200FDD508 /* OneViewTableTableViewController.m in Sources */,
+				4826EBE9215C9E9F006F5957 /* WDPageViewController.m in Sources */,
 				489C89372159D23A0049E834 /* SendMsgViewController.m in Sources */,
 				48B9E4C521423FFF0062C43D /* UIViewController+ScrollView.m in Sources */,
 				48D8A9E92151DA1A003BFB4D /* HealthKitManager.m in Sources */,
@@ -1266,6 +1326,7 @@
 				488023482150D30B000CF0C0 /* CALayerAnimationViewController.m in Sources */,
 				48B9E4D121423FFF0062C43D /* DropViewTest-2ViewController.m in Sources */,
 				489C893B2159D6C60049E834 /* SendEmailViewController.m in Sources */,
+				4826EBDC215C9E4E006F5957 /* WDPersonCenterViewController.m in Sources */,
 				481CC4E72147532A00B8A085 /* UIScrollView+WD_NoData.m in Sources */,
 				48D4F92A214B7C6900F9C70F /* WDPhotoActionSheet.m in Sources */,
 				481CC4CC2147468200B8A085 /* SliderCategoryView.m in Sources */,
@@ -1274,11 +1335,14 @@
 				481CC4E42147528000B8A085 /* WDEmptyNoDataViewController.m in Sources */,
 				489C89492159E1290049E834 /* DNContactsCell.m in Sources */,
 				48D4F927214B7C6900F9C70F /* WDPhotoPlaceHolderView.m in Sources */,
+				4826EBE8215C9E9F006F5957 /* WDPageSegmentView.m in Sources */,
 				481CC4D22147471D00B8A085 /* WDSliderTestTableView.m in Sources */,
 				48D4F92C214B7C6900F9C70F /* WDPhotoBottomView.m in Sources */,
 				48D4F92E214B7C6900F9C70F /* WDPhotoHUD.m in Sources */,
+				4826EBEB215C9E9F006F5957 /* WDPageCategory.m in Sources */,
 				48B9E4D921423FFF0062C43D /* DropViewTest-1ViewController.m in Sources */,
 				48B35EC221490DAE00FDD508 /* WDNestTableView.m in Sources */,
+				4826EBEA215C9E9F006F5957 /* WDPageNavigationBar.m in Sources */,
 				48B35EAE214907BC00FDD508 /* WMMenuItem.m in Sources */,
 				48B9E4C421423FFF0062C43D /* Demo3Test-2ViewController.m in Sources */,
 				481AB3A8214F30470078912F /* WDBannerView.m in Sources */,
