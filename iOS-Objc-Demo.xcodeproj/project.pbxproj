@@ -125,6 +125,8 @@
 		48D8A9E92151DA1A003BFB4D /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8A9E82151DA1A003BFB4D /* HealthKitManager.m */; };
 		48D8AA1C21521452003BFB4D /* HealthStepCalculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */; };
 		48D8AA1E21521C3F003BFB4D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */; };
+		48F6FE1D215DB3CF0090E80A /* ComBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F6FE1C215DB3CF0090E80A /* ComBoxViewController.m */; };
+		48F6FE22215DB48A0090E80A /* WDComboBoxControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F6FE21215DB48A0090E80A /* WDComboBoxControl.m */; };
 		68CE0461B9B6B4D24B564D20 /* libPods-iOS-Objc-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */; };
 		705F6A05215A2A3200632C73 /* DNPedometerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705F69FD215A2A3200632C73 /* DNPedometerCell.m */; };
 		705F6A06215A2A3200632C73 /* DNPedometerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705F6A00215A2A3200632C73 /* DNPedometerCell.xib */; };
@@ -356,6 +358,10 @@
 		48D8AA1A21521452003BFB4D /* HealthStepCalculatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthStepCalculatorController.h; sourceTree = "<group>"; };
 		48D8AA1B21521452003BFB4D /* HealthStepCalculatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthStepCalculatorController.m; sourceTree = "<group>"; };
 		48D8AA1D21521C3E003BFB4D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		48F6FE1B215DB3CF0090E80A /* ComBoxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComBoxViewController.h; sourceTree = "<group>"; };
+		48F6FE1C215DB3CF0090E80A /* ComBoxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComBoxViewController.m; sourceTree = "<group>"; };
+		48F6FE20215DB48A0090E80A /* WDComboBoxControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDComboBoxControl.h; sourceTree = "<group>"; };
+		48F6FE21215DB48A0090E80A /* WDComboBoxControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDComboBoxControl.m; sourceTree = "<group>"; };
 		49D755983804220513B9E4AB /* libPods-iOS-Objc-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Objc-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		705F69FC215A2A3200632C73 /* DNPedometerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPedometerManager.h; sourceTree = "<group>"; };
 		705F69FD215A2A3200632C73 /* DNPedometerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPedometerCell.m; sourceTree = "<group>"; };
@@ -525,6 +531,7 @@
 				48D8A9E32151D2D5003BFB4D /* 2018-09-19 */,
 				48D991062154E10900D54042 /* 2018-09-21 */,
 				489C892A2159B8940049E834 /* 2018-09-25 */,
+				48F6FE1E215DB3D20090E80A /* 2018-09-28 */,
 			);
 			path = "2018-09";
 			sourceTree = "<group>";
@@ -1110,6 +1117,25 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
+		48F6FE1E215DB3D20090E80A /* 2018-09-28 */ = {
+			isa = PBXGroup;
+			children = (
+				48F6FE1F215DB3E20090E80A /* Combox */,
+			);
+			path = "2018-09-28";
+			sourceTree = "<group>";
+		};
+		48F6FE1F215DB3E20090E80A /* Combox */ = {
+			isa = PBXGroup;
+			children = (
+				48F6FE1B215DB3CF0090E80A /* ComBoxViewController.h */,
+				48F6FE1C215DB3CF0090E80A /* ComBoxViewController.m */,
+				48F6FE20215DB48A0090E80A /* WDComboBoxControl.h */,
+				48F6FE21215DB48A0090E80A /* WDComboBoxControl.m */,
+			);
+			path = Combox;
+			sourceTree = "<group>";
+		};
 		705F69FB215A2A3200632C73 /* CoreMotion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1295,6 +1321,7 @@
 				489C894A2159E1290049E834 /* DNContactsModel.m in Sources */,
 				48B9E4CB21423FFF0062C43D /* TemplateOfViewController.m in Sources */,
 				705F6A07215A2A3200632C73 /* DNPedometerManager.m in Sources */,
+				48F6FE1D215DB3CF0090E80A /* ComBoxViewController.m in Sources */,
 				48B9E4D221423FFF0062C43D /* WDDropDownViewController.m in Sources */,
 				48B9E4F2214240060062C43D /* ViewController.m in Sources */,
 				48D4F921214B7C6900F9C70F /* WDPhotoPickerManager.m in Sources */,
@@ -1372,6 +1399,7 @@
 				48D4F92D214B7C6900F9C70F /* WDPhotoNavigationBar.m in Sources */,
 				489C894C2159E1290049E834 /* DNSortContactsTool.m in Sources */,
 				48D8A9E62151D45A003BFB4D /* HealthKitViewController.m in Sources */,
+				48F6FE22215DB48A0090E80A /* WDComboBoxControl.m in Sources */,
 				489585C221508B0F004BD992 /* ModalTestViewController.m in Sources */,
 				489585C92150977A004BD992 /* WDPopoverPresentationManager.m in Sources */,
 			);
