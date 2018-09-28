@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIButton *button2;
+@property (nonatomic, strong) UIButton *lastButton;
 
 @end
 
@@ -20,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     UIButton *button = [[UIButton alloc] init];
     [button setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
@@ -51,6 +51,8 @@
 }
 
 - (void)buttonShow:(UIButton *)sender {
+    self.lastButton = sender;
+
     [self.wdNavigationBar.centerButton setTitle:@"自定义下拉框" forState:UIControlStateNormal];
     WDComboBoxControl *view = [[WDComboBoxControl alloc] initViewWithMaxHeight:400 fromView:sender showDirection:WDComboBoxControlDirectionBottom];
     view.dataSource = self;
@@ -61,16 +63,16 @@
 
 #pragma mark =============== WDComBoxControlDataSource ===============
 - (NSArray<NSString *> *)titleOfSection {
-    return @[@"安徽省", @"浙江省", @"江苏省", @"安徽省", @"浙江省", @"江苏省"];
+    return [self.lastButton isEqual:self.button2] ? @[@"安徽省", @"浙江省", @"江苏省", @"安徽省"] : @[@"湖北省", @"湖南省", @"福建省"];
 }
 
 - (NSArray<NSArray<NSString *> *> *)dataSourceOfColunm {
-    return @[@[@"合肥", @"芜湖", @"安庆"],
-             @[@"南京", @"苏州", @"无锡"],
-             @[@"杭州", @"宁波", @"温州"],
-             @[@"合肥", @"芜湖", @"安庆"],
-             @[@"南京", @"苏州", @"无锡"],
-             @[@"杭州", @"宁波", @"温州"]];
+    return [self.lastButton isEqual:self.button2] ? @[@[@"合肥", @"芜湖", @"安庆"],
+                                                      @[@"南京", @"苏州", @"无锡"],
+                                                      @[@"杭州", @"宁波", @"温州"]] : @[@[@"合肥", @"芜湖", @"安庆"],
+                                                                                    @[@"南京", @"苏州", @"无锡"],
+                                                                                    @[@"杭州", @"宁波", @"温州"]];
+                                                                            
 }
 
 #pragma mark =============== WDComBoxControlDelegate ===============
