@@ -33,6 +33,9 @@
 		4826EBED215C9FC8006F5957 /* 1532095125345.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4826EBEC215C9FC8006F5957 /* 1532095125345.jpg */; };
 		4826EBF0215CA377006F5957 /* WDPageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4826EBEF215CA376006F5957 /* WDPageTestViewController.m */; };
 		4853B29C215A05AA00AA660F /* WDWebSoketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853B29B215A05AA00AA660F /* WDWebSoketManager.m */; };
+		48638623215F244800D620B8 /* WDLodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48638622215F244800D620B8 /* WDLodingViewController.m */; };
+		48638629215F247800D620B8 /* WDLodingHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48638626215F247700D620B8 /* WDLodingHUD.xcassets */; };
+		4863862A215F247800D620B8 /* WDLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48638628215F247800D620B8 /* WDLoadingHUD.m */; };
 		488023412150C71E000CF0C0 /* WDAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023402150C71E000CF0C0 /* WDAnimationViewController.m */; };
 		488023452150C83F000CF0C0 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023442150C83F000CF0C0 /* UIViewAnimationViewController.m */; };
 		488023482150D30B000CF0C0 /* CALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488023472150D30B000CF0C0 /* CALayerAnimationViewController.m */; };
@@ -181,6 +184,11 @@
 		4826EBEF215CA376006F5957 /* WDPageTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPageTestViewController.m; sourceTree = "<group>"; };
 		4853B29A215A05AA00AA660F /* WDWebSoketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDWebSoketManager.h; sourceTree = "<group>"; };
 		4853B29B215A05AA00AA660F /* WDWebSoketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDWebSoketManager.m; sourceTree = "<group>"; };
+		48638621215F244800D620B8 /* WDLodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLodingViewController.h; sourceTree = "<group>"; };
+		48638622215F244800D620B8 /* WDLodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLodingViewController.m; sourceTree = "<group>"; };
+		48638626215F247700D620B8 /* WDLodingHUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WDLodingHUD.xcassets; sourceTree = "<group>"; };
+		48638627215F247700D620B8 /* WDLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLoadingHUD.h; sourceTree = "<group>"; };
+		48638628215F247800D620B8 /* WDLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLoadingHUD.m; sourceTree = "<group>"; };
 		488023382150BF71000CF0C0 /* iOS-Objc-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Objc-Demo.entitlements"; sourceTree = "<group>"; };
 		4880233F2150C71E000CF0C0 /* WDAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDAnimationViewController.h; sourceTree = "<group>"; };
 		488023402150C71E000CF0C0 /* WDAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDAnimationViewController.m; sourceTree = "<group>"; };
@@ -518,6 +526,7 @@
 		4853B2962159F8DE00AA660F /* 2018-09 */ = {
 			isa = PBXGroup;
 			children = (
+				48638625215F245C00D620B8 /* 2018-09-29 */,
 				4826EBDE215C9E7B006F5957 /* 2018-09-27 */,
 				48B9E48321423FFE0062C43D /* 2018-09-05 */,
 				48B9E49C21423FFE0062C43D /* 2018-09-06 */,
@@ -534,6 +543,26 @@
 				48F6FE1E215DB3D20090E80A /* 2018-09-28 */,
 			);
 			path = "2018-09";
+			sourceTree = "<group>";
+		};
+		48638624215F244D00D620B8 /* 自定义Loding */ = {
+			isa = PBXGroup;
+			children = (
+				48638627215F247700D620B8 /* WDLoadingHUD.h */,
+				48638628215F247800D620B8 /* WDLoadingHUD.m */,
+				48638626215F247700D620B8 /* WDLodingHUD.xcassets */,
+				48638621215F244800D620B8 /* WDLodingViewController.h */,
+				48638622215F244800D620B8 /* WDLodingViewController.m */,
+			);
+			path = "自定义Loding";
+			sourceTree = "<group>";
+		};
+		48638625215F245C00D620B8 /* 2018-09-29 */ = {
+			isa = PBXGroup;
+			children = (
+				48638624215F244D00D620B8 /* 自定义Loding */,
+			);
+			path = "2018-09-29";
 			sourceTree = "<group>";
 		};
 		488023422150C721000CF0C0 /* 动画学习 */ = {
@@ -1264,6 +1293,7 @@
 				481AB3B5214F322A0078912F /* test4.jpg in Resources */,
 				489585C321508B0F004BD992 /* ModalTestViewController.xib in Resources */,
 				48B9E4D621423FFF0062C43D /* arrow_up@2x.png in Resources */,
+				48638629215F247800D620B8 /* WDLodingHUD.xcassets in Resources */,
 				48B9E4ED214240060062C43D /* Assets.xcassets in Resources */,
 				48B35EBF214909F500FDD508 /* avatar.jpg in Resources */,
 				481AB3B6214F322A0078912F /* test0.jpg in Resources */,
@@ -1333,6 +1363,7 @@
 				48B35EAD214907BC00FDD508 /* WMPageController.m in Sources */,
 				48B9E4C221423FFF0062C43D /* Demo1TestViewController.m in Sources */,
 				48B35EAF214907BC00FDD508 /* WMScrollView.m in Sources */,
+				4863862A215F247800D620B8 /* WDLoadingHUD.m in Sources */,
 				481CC5202147AF9600B8A085 /* JianShuViewController.m in Sources */,
 				489585B221508898004BD992 /* WDPopoverAnimator.m in Sources */,
 				481CC4EA214785D800B8A085 /* WDTestEmptyView.m in Sources */,
@@ -1379,6 +1410,7 @@
 				489C89292159B8900049E834 /* WDContactPersonViewController.m in Sources */,
 				48D7453B2146800E008D2258 /* WebSocketViewController.m in Sources */,
 				488023452150C83F000CF0C0 /* UIViewAnimationViewController.m in Sources */,
+				48638623215F244800D620B8 /* WDLodingViewController.m in Sources */,
 				48B9E4C321423FFF0062C43D /* WDTabLayout.m in Sources */,
 				48B35EB1214907BC00FDD508 /* WMProgressView.m in Sources */,
 				48D4F932214B7E5B00F9C70F /* UIScrollView+Photo_PlaceHolder.m in Sources */,

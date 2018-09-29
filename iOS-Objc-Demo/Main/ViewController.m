@@ -58,9 +58,10 @@
                        @[@"打字效果"],
                        @[@"访问联系人", @"本地推送", @"拨打电话", @"发送短信", @"发送邮件"],
                        @[@"个人中心<精简版>"],
-                       @[@"下拉框 -- ComBox"]];
+                       @[@"下拉框 -- ComBox"],
+                       @[@"自定义Loding"]];
     
-    self.dateArray = @[@"2018-09-05", @"2018-09-06", @"2018-09-07", @"2018-09-10", @"2018-09-11", @"2018-09-12", @"2018-09-14", @"2018-09-17", @"2018-09-18", @"2018-09-19", @"2018-09-21", @"2018-09-25", @"2018-09-27", @"2018-09-28"];
+    self.dateArray = @[@"2018-09-05", @"2018-09-06", @"2018-09-07", @"2018-09-10", @"2018-09-11", @"2018-09-12", @"2018-09-14", @"2018-09-17", @"2018-09-18", @"2018-09-19", @"2018-09-21", @"2018-09-25", @"2018-09-27", @"2018-09-28", @"2018-09-29"];
     
     self.controllerArray = @[@[@"Demo1ViewController", @"Demo2ViewController", @"Demo3ViewController"],
                              @[@"WDWebViewController"],
@@ -75,7 +76,8 @@
                              @[@"WDPrintViewController"],
                              @[@"WDContactPersonViewController", @"NotificationViewController", @"DailViewController", @"SendMsgViewController", @"SendEmailViewController"],
                              @[@"WDPersonCenterViewController"],
-                             @[@"ComBoxViewController"]
+                             @[@"ComBoxViewController"],
+                             @[@"WDLodingViewController"]
                              ];
     
     [self.tableView reloadData];
