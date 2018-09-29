@@ -47,7 +47,7 @@
 
 #pragma mark =============== Data initialization ===============
 - (void)dataInitialization {
-    self.dataArray = @[@"显示系统菊花", @"仅文字", @"图上文下", @"图下文上", @"图左文右", @"图右文左", @"循环显示"];
+    self.dataArray = @[@"显示系统菊花", @"仅文字", @"图上文下", @"图下文上", @"图左文右", @"图右文左",@"动态图", @"循环显示"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -70,6 +70,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
+    
+     NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i<151 ; i++) {
+        [array addObject:[NSString stringWithFormat:@"progress_38-%d", i]];
+    }
+    
+    for (int i = 0; i<=150 ; i++) {
+        [array addObject:[NSString stringWithFormat:@"progress_42-%d", i]];
+    }
+    
+    for (int i = 0; i<=119 ; i++) {
+        [array addObject:[NSString stringWithFormat:@"start-%d", i]];
+    }
     
     switch (indexPath.row) {
         case 0:{
@@ -96,7 +109,16 @@
             [[WDLoadingHUD hud] showTitle:@"加载中" imageName:@"MBHUD_Success" direction:WDLoadingHUDImageDirectionRight style:WDLoadingHUDColorStyleDefault];
         }
             break;
+            
         case 6:{
+            
+            [[WDLoadingHUD hud] showImageAnimationWithImageArray:array duration:10 style:WDLoadingHUDColorStyleDefault];
+            
+            return;
+        }
+            break;
+            
+        case 7:{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                  [[WDLoadingHUD hud] showNormalIndicatorWithStyle:WDLoadingHUDColorStyleDefault];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

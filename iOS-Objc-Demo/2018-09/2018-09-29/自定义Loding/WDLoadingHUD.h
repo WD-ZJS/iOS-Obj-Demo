@@ -52,6 +52,8 @@ typedef NS_ENUM(NSInteger, WDLoadingHUDImageDirection) {
  */
 - (void)showTitle:(NSString *)title imageName:(NSString *)imageName direction:(WDLoadingHUDImageDirection)aDirection style:(WDLoadingHUDColorStyle)style;
 
+- (void)showImageAnimationWithImageArray:(NSArray<NSString *> *)imageArray duration:(CGFloat)time style:(WDLoadingHUDColorStyle)style;
+
 - (void)dismissHUD;
 
 @end

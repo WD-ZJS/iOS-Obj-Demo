@@ -280,6 +280,49 @@
     }
 }
 
+- (void)showImageAnimationWithImageArray:(NSArray<NSString *> *)imageArray duration:(CGFloat)time style:(WDLoadingHUDColorStyle)style {
+    
+    [self showHUD];
+    
+    [self.containerView addSubview:self.backgroundView];
+    self.backgroundView.layer.cornerRadius = 10;
+    
+    UIImage *firstImage = [UIImage imageNamed:imageArray.firstObject];
+    
+    self.backgroundView.translatesAutoresizingMaskIntoConstraints = false;
+    NSLayoutConstraint *c_centerX = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
+    NSLayoutConstraint *c_centerY = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
+    NSLayoutConstraint *c_width = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1 constant:firstImage.size.width + 20];
+    NSLayoutConstraint *c_height = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:firstImage.size.height + 20];
+    [self.containerView addConstraints:@[c_centerX, c_centerY, c_width, c_height]];
+    
+    
+    [self.backgroundView addSubview:self.lodingImageView];
+    self.lodingImageView.translatesAutoresizingMaskIntoConstraints = false;
+    NSLayoutConstraint *in_centerX = [NSLayoutConstraint constraintWithItem:self.lodingImageView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
+    NSLayoutConstraint *in_centerY = [NSLayoutConstraint constraintWithItem:self.lodingImageView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
+    [self.backgroundView addConstraints:@[in_centerX, in_centerY]];
+    
+//    self.lodingImageView.image = firstImage;
+    
+    NSMutableArray *images = [NSMutableArray array];
+    for (NSString *string in imageArray) {
+        UIImage *image = [UIImage imageNamed:string];
+        [images addObject:image];
+    }
+    
+    self.lodingImageView.animationImages = images;
+    self.lodingImageView.animationDuration = time;
+    self.lodingImageView.animationRepeatCount = 0;
+    [self.lodingImageView startAnimating];
+    
+    if (style == WDLoadingHUDColorStyleLight) {
+        self.backgroundView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.9];
+    } else {
+        self.backgroundView.backgroundColor = UIColor.darkGrayColor;
+    }
+}
+
 #pragma - 获取window
 - (UIWindow*)lastWindow {
     NSEnumerator*frontToBackWindows = [UIApplication.sharedApplication.windows reverseObjectEnumerator];
